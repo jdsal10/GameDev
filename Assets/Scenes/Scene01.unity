@@ -238,11 +238,34 @@ MonoBehaviour:
   - {fileID: 2033311037}
   - {fileID: 1071832820}
   - {fileID: 307105309}
+  regenDelay: 2.5
+  regenRate: 0.1
 --- !u!198 &137244021 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 198679442476388764, guid: f293a2dcc753a4a489fefe7f8f312d69, type: 3}
   m_PrefabInstance: {fileID: 1541270357}
   m_PrefabAsset: {fileID: 0}
+--- !u!135 &137244024
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 137244015}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 3
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &180759857
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6630,6 +6653,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 169ac565d29a1034ca366346698aa6a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  amountExtingushedPerSecond: 0.1
 --- !u!1001 &1245959831
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7148,6 +7172,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1956197547661106, guid: f293a2dcc753a4a489fefe7f8f312d69, type: 3}
       insertIndex: -1
       addedObject: {fileID: 137244019}
+    - targetCorrespondingSourceObject: {fileID: 1956197547661106, guid: f293a2dcc753a4a489fefe7f8f312d69, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 137244024}
   m_SourcePrefab: {fileID: 100100000, guid: f293a2dcc753a4a489fefe7f8f312d69, type: 3}
 --- !u!1 &1674927846 stripped
 GameObject:
