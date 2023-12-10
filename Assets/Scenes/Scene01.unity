@@ -233,7 +233,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentIntensity: 1
-  fireParticleSystems: []
+  fireParticleSystems:
+  - {fileID: 137244021}
+  - {fileID: 2033311037}
+  - {fileID: 1071832820}
+  - {fileID: 307105309}
+--- !u!198 &137244021 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 198679442476388764, guid: f293a2dcc753a4a489fefe7f8f312d69, type: 3}
+  m_PrefabInstance: {fileID: 1541270357}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &180759857
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -429,6 +438,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 921a3ff88856fe04ebc86b196fd8cc59, type: 3}
   m_PrefabInstance: {fileID: 1924825247}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &307105309 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 172016209281322046, guid: f293a2dcc753a4a489fefe7f8f312d69, type: 3}
+  m_PrefabInstance: {fileID: 1541270357}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &330693621
 PrefabInstance:
@@ -1138,6 +1152,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1245199649}
   m_SourcePrefab: {fileID: 100100000, guid: 2e62f5703e5f8d2488a5e1bc8433be41, type: 3}
+--- !u!198 &1071832820 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 198266200310702596, guid: f293a2dcc753a4a489fefe7f8f312d69, type: 3}
+  m_PrefabInstance: {fileID: 1541270357}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1077811063 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4786460565188941340, guid: 9ca30f92c84ead447a648f6204d58826, type: 3}
@@ -7688,6 +7707,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!198 &2033311037 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 198056694026403006, guid: f293a2dcc753a4a489fefe7f8f312d69, type: 3}
+  m_PrefabInstance: {fileID: 1541270357}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2036835611 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100006, guid: 0438351a6e6422d43a09930e9be00ee9, type: 3}

@@ -6,8 +6,10 @@ public class Fire : MonoBehaviour
 {
     //Only allow fire range to be between 0 and 1
     [SerializeField, Range(0f,1f)] private float currentIntensity = 1.0f;
-    private float [] startIntensities = new float[0];
+    //Start all of the intensities at a determined number
+    private float [] startIntensities = new float [0];
 
+    //Array of partivcle systems to be able to adjust all of the fire particle systems at the same time
     [SerializeField] private ParticleSystem [] fireParticleSystems = new ParticleSystem[0];
 
     private void Start()
@@ -34,5 +36,6 @@ public class Fire : MonoBehaviour
             var emission = fireParticleSystems[i].emission;
             emission.rateOverTime = currentIntensity * startIntensities[i];
         }
+  
     }
 }
