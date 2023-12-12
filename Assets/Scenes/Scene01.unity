@@ -6654,6 +6654,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amountExtingushedPerSecond: 0.1
+  waterHose: {fileID: 1299841970}
 --- !u!1001 &1245959831
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6715,6 +6716,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22c914c1a9856c648bf7e6edab9978f6, type: 3}
+--- !u!1 &1299841970 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6552745422456513636, guid: 255683988c4b3da44b92d900feba58e8, type: 3}
+  m_PrefabInstance: {fileID: 1039445330}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1401224674
 PrefabInstance:
   m_ObjectHideFlags: 0
