@@ -508,8 +508,22 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 144.22679, y: 132.8, z: 378.08}
-  m_Center: {x: 2.2, y: 121.1, z: -2.51}
+  m_Size: {x: 144.22679, y: 203.3, z: 340.85797}
+  m_Center: {x: 0, y: 39.7, z: 2.155365}
+--- !u!114 &251502754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 251502747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 105751971563c47a18df2845f4a88ea6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carCamera: {fileID: 1921357406}
+  personCamera: {fileID: 1245199652}
 --- !u!4 &297406617 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 921a3ff88856fe04ebc86b196fd8cc59, type: 3}
@@ -591,7 +605,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100012, guid: 2dabd7a53b5a97445b5a23887b4fc4ce, type: 3}
       propertyPath: m_Name
-      value: Military_Vehicle
+      value: Car
       objectReference: {fileID: 0}
     - target: {fileID: 400012, guid: 2dabd7a53b5a97445b5a23887b4fc4ce, type: 3}
       propertyPath: m_RootOrder
@@ -659,6 +673,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100012, guid: 2dabd7a53b5a97445b5a23887b4fc4ce, type: 3}
       insertIndex: -1
       addedObject: {fileID: 251502753}
+    - targetCorrespondingSourceObject: {fileID: 100012, guid: 2dabd7a53b5a97445b5a23887b4fc4ce, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 251502754}
   m_SourcePrefab: {fileID: 100100000, guid: 2dabd7a53b5a97445b5a23887b4fc4ce, type: 3}
 --- !u!1001 &471312136
 PrefabInstance:
@@ -1281,6 +1298,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 54587624234064098, guid: 2e62f5703e5f8d2488a5e1bc8433be41, type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 114051214696948948, guid: 2e62f5703e5f8d2488a5e1bc8433be41, type: 3}
       propertyPath: footStepSounds.Array.data[0]
       value: 
@@ -1293,6 +1314,10 @@ PrefabInstance:
       propertyPath: footStepSounds.Array.data[2]
       value: 
       objectReference: {fileID: 8300000, guid: fb6839219f2c6674996d76c7d9626311, type: 3}
+    - target: {fileID: 136239539305442568, guid: 2e62f5703e5f8d2488a5e1bc8433be41, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -6788,6 +6813,11 @@ MonoBehaviour:
   amountExtingushedPerSecond: 0.1
   waterHose: {fileID: 1299841970}
   arcHeight: 1
+--- !u!20 &1245199652 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 20724644957976244, guid: 2e62f5703e5f8d2488a5e1bc8433be41, type: 3}
+  m_PrefabInstance: {fileID: 1059799148}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1245959831
 PrefabInstance:
   m_ObjectHideFlags: 0
