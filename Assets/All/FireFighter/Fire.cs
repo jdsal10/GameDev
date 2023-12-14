@@ -29,7 +29,6 @@ public class Fire : MonoBehaviour
         {
             startIntensities[i] = fireParticleSystems[i].emission.rateOverTime.constant;
         }
-        //On start start intensity equls whatever it is set on unity
     }
 
     private void Update()

@@ -36,6 +36,7 @@ public class Extinguisher : MonoBehaviour
         }
     }
 
+    //calculate the curve to have an arched line when detecting teh fire
     private Vector3 CalculateCurvedDirection(Vector3 initialDirection)
     {
         Vector3 curvedDirection = initialDirection + Vector3.up * arcHeight;
