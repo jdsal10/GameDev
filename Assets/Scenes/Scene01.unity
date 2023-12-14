@@ -1146,7 +1146,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 3
+  m_Radius: 2
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &976224101
 MonoBehaviour:
@@ -7029,6 +7029,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6027290540948948680, guid: 93282af6894ba2841b56f10978fb43e9, type: 3}
+      propertyPath: m_Radius
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7157700686913994865, guid: 93282af6894ba2841b56f10978fb43e9, type: 3}
       propertyPath: m_Name
       value: WildFire (1)
@@ -8578,6 +8582,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6027290540948948680, guid: 93282af6894ba2841b56f10978fb43e9, type: 3}
+      propertyPath: m_Radius
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7157700686913994865, guid: 93282af6894ba2841b56f10978fb43e9, type: 3}
       propertyPath: m_Name
       value: WildFire
