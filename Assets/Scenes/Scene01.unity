@@ -651,6 +651,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4a8f092e071624499a23e0e7dc3b309, type: 3}
+--- !u!1 &377665644 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1480235522498184749, guid: 0371b774b3f6b4c06ad1a0c3771890b8, type: 3}
+  m_PrefabInstance: {fileID: 2393364890214897708}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &471312136
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1063,6 +1068,11 @@ WheelCollider:
   m_LayerOverridePriority: 0
   m_Enabled: 1
   m_ProvidesContacts: 0
+--- !u!1 &764995082 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1743903104223250, guid: 2e62f5703e5f8d2488a5e1bc8433be41, type: 3}
+  m_PrefabInstance: {fileID: 1059799148}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &828486138
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1865,6 +1875,22 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7912b2f493c8bc94a9db023917e8579a, type: 3}
+--- !u!1 &1115063746 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5227549305093589218, guid: 2340d074cb6ca4e908c8e46f9cfdd0cb, type: 3}
+  m_PrefabInstance: {fileID: 3469312844973572505}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1115063747 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8467602004448004699, guid: 2340d074cb6ca4e908c8e46f9cfdd0cb, type: 3}
+  m_PrefabInstance: {fileID: 3469312844973572505}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115063746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 698e45655a4f549e4b7b58d07ae47ab3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1120822211
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8288,6 +8314,19 @@ Camera:
   m_CorrespondingSourceObject: {fileID: 120832180172965556, guid: 0371b774b3f6b4c06ad1a0c3771890b8, type: 3}
   m_PrefabInstance: {fileID: 2393364890214897708}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1921357409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377665644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8d656d71349442798572cf85bfa6834, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  car: {fileID: 1115063746}
 --- !u!1001 &1924825247
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8887,7 +8926,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1480235522498184749, guid: 0371b774b3f6b4c06ad1a0c3771890b8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1921357409}
   m_SourcePrefab: {fileID: 100100000, guid: 0371b774b3f6b4c06ad1a0c3771890b8, type: 3}
 --- !u!1001 &3076110677728111263
 PrefabInstance:
@@ -8970,6 +9012,14 @@ PrefabInstance:
       propertyPath: personCamera
       value: 
       objectReference: {fileID: 1245199652}
+    - target: {fileID: 667434689023773679, guid: 2340d074cb6ca4e908c8e46f9cfdd0cb, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 764995082}
+    - target: {fileID: 667434689023773679, guid: 2340d074cb6ca4e908c8e46f9cfdd0cb, type: 3}
+      propertyPath: carController
+      value: 
+      objectReference: {fileID: 1115063747}
     - target: {fileID: 3915054097890254613, guid: 2340d074cb6ca4e908c8e46f9cfdd0cb, type: 3}
       propertyPath: m_Size.x
       value: 150.2
