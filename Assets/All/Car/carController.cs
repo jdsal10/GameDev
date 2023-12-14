@@ -38,7 +38,7 @@ public class carController : MonoBehaviour
 
     }
 
-    private void FixedUpdate()
+    public void HandleInput()
     {
         GetInputOfPlayer();
         Motor();
@@ -51,10 +51,8 @@ public class carController : MonoBehaviour
         flWheelCollider.motorTorque = verticalInput * motorForce;
         frWheelCollider.motorTorque = verticalInput * motorForce;
         currentBreakingForce = breaking ? breakingForce : 0f;
-        if (breaking)
-        {
-            ApplyingBrekes();
-        }
+        ApplyingBrekes();
+
     }
 
     public void ApplyingBrekes()

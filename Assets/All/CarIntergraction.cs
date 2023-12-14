@@ -2,10 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CarIntergraction : MonoBehaviour
+public class CarInteraction : MonoBehaviour
 {
     public Camera carCamera;
     public Camera personCamera;
+    public carController carController; // Reference to the carController script
+    public GameObject playerObject; // Reference to the player GameObject
 
     private bool isPlayerInCar;
     private Transform player;
@@ -16,8 +18,8 @@ public class CarIntergraction : MonoBehaviour
         carCamera.gameObject.SetActive(false);
         personCamera.gameObject.SetActive(true);
 
-        // Find the player GameObject by tag
-        player = GameObject.FindGameObjectWithTag("Player").transform;
+        // Set the player reference using the assigned GameObject or another method
+        player = playerObject.transform;
     }
 
     void Update()
@@ -30,6 +32,12 @@ public class CarIntergraction : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.X) && isPlayerInCar)
         {
             SwitchCamera();
+        }
+
+        // Forward input to carController only when the player is in the car
+        if (isPlayerInCar)
+        {
+            carController.HandleInput();
         }
     }
 
