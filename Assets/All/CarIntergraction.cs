@@ -45,9 +45,13 @@ public class CarInteraction : MonoBehaviour
     void ToggleCarInteraction()
     {
         if (isPlayerInCar)
+        {
             ExitCar(); // If the player is in the car, exit it
+        }
         else
+        {
             EnterCar(); // If the player is outside the car, enter it
+        }
     }
 
     void EnterCar()
