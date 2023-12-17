@@ -886,7 +886,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 615903739}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.26, y: 0.17999992, z: 0}
+  m_LocalPosition: {x: -0.24, y: 0.17999992, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -904,8 +904,8 @@ WheelCollider:
   m_Center: {x: 0, y: -0.03, z: 0}
   m_Radius: 0.66
   m_SuspensionSpring:
-    spring: 35000
-    damper: 4500
+    spring: 37398
+    damper: 6356
     targetPosition: 0.5
   m_SuspensionDistance: 0.3
   m_ForceAppPointDistance: 0
@@ -1040,8 +1040,8 @@ WheelCollider:
   m_Center: {x: 0, y: -0.03, z: 0}
   m_Radius: 0.66
   m_SuspensionSpring:
-    spring: 35000
-    damper: 4500
+    spring: 37398
+    damper: 6356
     targetPosition: 0.5
   m_SuspensionDistance: 0.3
   m_ForceAppPointDistance: 0
@@ -1290,7 +1290,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 910396237}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.316, y: 0.17999992, z: -4.82}
+  m_LocalPosition: {x: -0.26, y: 0.17999992, z: -4.82}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1308,8 +1308,8 @@ WheelCollider:
   m_Center: {x: 0, y: -0.03, z: 0}
   m_Radius: 0.66
   m_SuspensionSpring:
-    spring: 35000
-    damper: 4500
+    spring: 37398
+    damper: 6356
     targetPosition: 0.5
   m_SuspensionDistance: 0.3
   m_ForceAppPointDistance: 0
@@ -8686,7 +8686,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2053450016}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.84, y: 0.17999992, z: -4.82}
+  m_LocalPosition: {x: -2.78, y: 0.17999992, z: -4.82}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8704,8 +8704,8 @@ WheelCollider:
   m_Center: {x: 0, y: -0.03, z: 0}
   m_Radius: 0.66
   m_SuspensionSpring:
-    spring: 35000
-    damper: 4500
+    spring: 37398
+    damper: 6356
     targetPosition: 0.5
   m_SuspensionDistance: 0.3
   m_ForceAppPointDistance: 0
