@@ -70,6 +70,7 @@ public class Fire : MonoBehaviour
         {
             var emission = fireParticleSystems[i].emission;
             emission.rateOverTime = currentIntensity * startIntensities[i];
+            //check if fire has been extenguished 
             if(emission.rateOverTime.constant == 0)
             {
                 isEmssionZero = true;
