@@ -6,7 +6,7 @@ public class Extinguisher : MonoBehaviour
 {
     [SerializeField] private float amountExtingushedPerSecond = 1.0f;
     public GameObject waterHose; //link to fire hose object
-    [SerializeField] private float arcHeight = 1.0f; //adjust height of the arc
+    [SerializeField] private float arcHeight = 1.0f; //adjust height of the arc, test
 
 
     void Start()
