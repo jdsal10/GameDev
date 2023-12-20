@@ -17,8 +17,10 @@ public class Fire : MonoBehaviour
     [SerializeField] private float regenDelay = 2.5f;
     [SerializeField] private float regenRate = .1f;
 
-    private bool isLit = true;
+    public bool isLit = true;
     private bool isEmssionZero = false;
+
+    public GameObject steam;
 
     private void Start()
     {
@@ -30,6 +32,7 @@ public class Fire : MonoBehaviour
         {
             startIntensities[i] = fireParticleSystems[i].emission.rateOverTime.constant;
         }
+        steam = transform.GetChild(3).gameObject;
     }
 
     private void Update()
@@ -77,4 +80,5 @@ public class Fire : MonoBehaviour
             }
         }  
     }
+
 }
