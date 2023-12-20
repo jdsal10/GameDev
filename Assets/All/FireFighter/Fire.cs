@@ -18,6 +18,7 @@ public class Fire : MonoBehaviour
     [SerializeField] private float regenRate = .1f;
 
     private bool isLit = true;
+    private bool isEmssionZero = false;
 
     private void Start()
     {
@@ -29,7 +30,6 @@ public class Fire : MonoBehaviour
         {
             startIntensities[i] = fireParticleSystems[i].emission.rateOverTime.constant;
         }
-        //On start start intensity equls whatever it is set on unity
     }
 
     private void Update()
@@ -51,7 +51,7 @@ public class Fire : MonoBehaviour
         currentIntensity -= toReduce;
 
         //Check if fire was extingushed
-        if(currentIntensity <= 0)
+        if(isEmssionZero)
         {
             isLit = false;
             return true;
@@ -70,7 +70,11 @@ public class Fire : MonoBehaviour
         {
             var emission = fireParticleSystems[i].emission;
             emission.rateOverTime = currentIntensity * startIntensities[i];
-        }
-  
+            //check if fire has been extenguished 
+            if(emission.rateOverTime.constant == 0)
+            {
+                isEmssionZero = true;
+            }
+        }  
     }
 }
