@@ -8668,7 +8668,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 30
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &2009788516
 GameObject:
@@ -9054,6 +9054,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 120832180172965556, guid: 0371b774b3f6b4c06ad1a0c3771890b8, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 119
+      objectReference: {fileID: 0}
     - target: {fileID: 1480235522498184749, guid: 0371b774b3f6b4c06ad1a0c3771890b8, type: 3}
       propertyPath: m_Name
       value: CarCamera
