@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Radar : MonoBehaviour
 {
-    public GameObject[] trackedObjects;
     List<GameObject> radarObjects;
     public GameObject radarPrefab;
     List<GameObject> borderObjects;
