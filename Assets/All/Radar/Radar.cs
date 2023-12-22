@@ -10,13 +10,17 @@ public class Radar : MonoBehaviour
     List<GameObject> borderObjects;
     public float switchDistance;
     public Transform helpTransform;
-
-
-
+    
+    public FireSpawner fireSpawner;
+    List<GameObject> fireObjects;
 
     // Start is called before the first frame update
     void Start()
     {
+        // Assign the value from GetFireObjects to the class-level fireObjects
+        fireObjects = fireSpawner.GetFireObjects();
+
+        Debug.Log("Fire objects received: " + (fireObjects != null));
         createRadarObjects();
     }
 
@@ -44,13 +48,23 @@ public class Radar : MonoBehaviour
         radarObjects = new List<GameObject>();
         borderObjects = new List<GameObject>();
 
-        foreach(GameObject o in trackedObjects){
+        // Debug.Log(fireObjects.Count);
+
+        if (fireObjects != null && fireObjects.Count > 0)
+        {
+        foreach(GameObject o in fireObjects){
             //instantiate on radar objects
+            Debug.Log(o);
             GameObject k = Instantiate(radarPrefab, o.transform.position, Quaternion.identity) as GameObject;
             radarObjects.Add(k);
             //Instantiate border objects
             GameObject j = Instantiate(radarPrefab, o.transform.position, Quaternion.identity) as GameObject;
             borderObjects.Add(j);
+        }
+        }
+        else
+        {
+            Debug.Log("No fire objects obtained from FireSpawner");
         }
     }
 }

@@ -504,6 +504,7 @@ MonoBehaviour:
   - {fileID: 10024315}
   - {fileID: 1379092895}
   - {fileID: 791495242}
+  - {fileID: 1385133533}
 --- !u!4 &349083932
 Transform:
   m_ObjectHideFlags: 0
@@ -1847,6 +1848,7 @@ MonoBehaviour:
   radarPrefab: {fileID: 8462367742014515461, guid: 5f804fa2a538f8347b901d4aaac01192, type: 3}
   switchDistance: 10
   helpTransform: {fileID: 1607001990}
+  fireSpawner: {fileID: 349083931}
 --- !u!1001 &1245959831
 PrefabInstance:
   m_ObjectHideFlags: 0
