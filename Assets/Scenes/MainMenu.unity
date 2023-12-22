@@ -141,7 +141,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &184108262
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1348,7 +1348,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1616884303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1616,7 +1616,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 20, y: 160}
+  m_AnchoredPosition: {x: 20, y: 17}
   m_SizeDelta: {x: 1269, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1767885128
@@ -1639,22 +1639,23 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'The goal of the game is to stop the fire at a with in the time given.
+  m_text: 'The goal of the game is to stop the fire with in the given time. There
+    is also a radar to show where all the fires are.
 
 
-    For
-    moving car and player use the arrow keys.
+    For moving car and  the
+    player use the arrow/WASD keys.
 
 
-    To break in the car and jump
-    with the player press space bar.
+    To stop the car and jump with the player
+    press space bar.
 
 
     To enter and exit the car press E key.
 
 
-    To
-    put fire out press F key.'
+    To put fire
+    out press F key and use the mouse to aim at the fire.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1663,8 +1664,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4279094991
-  m_fontColor: {r: 0.8113208, g: 0.8063934, b: 0.049750824, a: 1}
+    rgba: 4279601134
+  m_fontColor: {r: 0.9339623, g: 0.5297617, b: 0.083704144, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1681,15 +1682,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 2048
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 4096
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0

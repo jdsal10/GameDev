@@ -1494,6 +1494,10 @@ PrefabInstance:
       propertyPath: m_IsKinematic
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 82712217391461128, guid: 2e62f5703e5f8d2488a5e1bc8433be41, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: fb6839219f2c6674996d76c7d9626311, type: 3}
     - target: {fileID: 114051214696948948, guid: 2e62f5703e5f8d2488a5e1bc8433be41, type: 3}
       propertyPath: footStepSounds.Array.data[0]
       value: 
@@ -1853,7 +1857,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countDownText: {fileID: 1639061165}
-  timeLeft: 300
+  timeLeft: 600
 --- !u!1001 &1245959831
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3192,6 +3196,10 @@ PrefabInstance:
       propertyPath: breakingForce
       value: 4000
       objectReference: {fileID: 0}
+    - target: {fileID: 8467602004448004699, guid: 2340d074cb6ca4e908c8e46f9cfdd0cb, type: 3}
+      propertyPath: carMovingAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: c502041826854664683f9914f63427b0, type: 3}
     - target: {fileID: 8467602004448004699, guid: 2340d074cb6ca4e908c8e46f9cfdd0cb, type: 3}
       propertyPath: blWheelCollider
       value: 
