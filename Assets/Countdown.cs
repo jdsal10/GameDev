@@ -11,32 +11,26 @@ public class Countdown : MonoBehaviour
     private int min;
     private int sec;
 
-    // Start is called before the first frame update
-    void Start()
+    void Update()
     {
-
+        UpdateCountdown();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void UpdateCountdown()
     {
         if (timeLeft > 0)
         {
             timeLeft -= Time.deltaTime;
+
+            min = Mathf.FloorToInt(timeLeft / 60);
+            sec = Mathf.FloorToInt(timeLeft % 60);
+            countDownText.text = string.Format("{0:00}:{1:00}", min, sec);
         }
         else
         {
-            if (timeLeft < 0)
-            {
-                timeLeft = 0;
-                countDownText.color = Color.red;
-                SceneManager.LoadSceneAsync(0);
-            }
+            timeLeft = 0;
+            countDownText.color = Color.red;
+            SceneManager.LoadScene("MainMenu");
         }
-
-        timeLeft -= Time.deltaTime;
-        min = Mathf.FloorToInt(timeLeft / 60);
-        sec = Mathf.FloorToInt(timeLeft % 60);
-        countDownText.text = string.Format("{0:00}:{1:00}", min, sec);
     }
 }

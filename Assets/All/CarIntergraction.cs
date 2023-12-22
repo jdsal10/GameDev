@@ -11,15 +11,17 @@ public class CarInteraction : MonoBehaviour
 
     private bool isPlayerInCar;
     private Transform player;
+    private GameObject playerCammera;
 
     void Start()
     {
-        // Initialize cameras
+       
         carCamera.gameObject.SetActive(false); // Deactivate car camera initially
         personCamera.gameObject.SetActive(true); // Activate person camera initially
 
-        // Set the player reference using the assigned GameObject or another method
         player = playerObject.transform;
+
+        playerCammera = GameObject.Find("Player Camera");
     }
 
     void Update()
@@ -39,6 +41,7 @@ public class CarInteraction : MonoBehaviour
         if (isPlayerInCar)
         {
             carController.HandleInput(); // Forward input to the carController script
+            playerCammera.GetComponent<Countdown>().UpdateCountdown();
         }
     }
 
