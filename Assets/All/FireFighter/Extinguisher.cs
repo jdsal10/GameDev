@@ -25,6 +25,7 @@ public class Extinguisher : MonoBehaviour
             Vector3 curvedDirection = CalculateCurvedDirection(Camera.main.transform.forward);
             Debug.DrawLine(Camera.main.transform.position, curvedDirection, Color.red);
 
+            //use raycasting to extinguish fire
             if(Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out RaycastHit hit, 100f) && hit.collider.TryGetComponent(out Fire fire))
             {
                 fire.TryExtinsguish(amountExtingushedPerSecond * Time.deltaTime);
@@ -42,8 +43,6 @@ public class Extinguisher : MonoBehaviour
         }else{
             //stop shooting water when f is not pressed
             waterHose.SetActive(false);
-            // Steam.SetActive(false);
-            // waterHoseParticles.Stop();
         }
     }
 
