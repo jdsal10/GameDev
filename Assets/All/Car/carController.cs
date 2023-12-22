@@ -26,6 +26,9 @@ public class carController : MonoBehaviour
     public Transform frWheelTransform;
     public Transform blWheelTransform;
     public Transform brWheelTransform;
+
+   public AudioClip carMovingAudio;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -53,6 +56,12 @@ public class carController : MonoBehaviour
         currentBreakingForce = breaking ? breakingForce : 0f;
         ApplyingBrekes();
 
+        AudioSource.PlayClipAtPoint(carMovingAudio, transform.position);
+
+       if (carMovingAudio != null)
+        {
+            AudioSource.PlayClipAtPoint(carMovingAudio, transform.position);
+        }
     }
 
     public void ApplyingBrekes()

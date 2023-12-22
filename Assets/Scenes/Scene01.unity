@@ -1555,20 +1555,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 698e45655a4f549e4b7b58d07ae47ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1115063754
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1115063746}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3177647bd7f0748c6be22891582fa4dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countDownText: {fileID: 1639061165}
-  timeLeft: 90
 --- !u!1 &1131280417
 GameObject:
   m_ObjectHideFlags: 0
@@ -1867,7 +1853,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countDownText: {fileID: 1639061165}
-  timeLeft: 30
+  timeLeft: 300
 --- !u!1001 &1245959831
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3115,6 +3101,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1921357406}
     - target: {fileID: 667434689023773679, guid: 2340d074cb6ca4e908c8e46f9cfdd0cb, type: 3}
+      propertyPath: countdown
+      value: 
+      objectReference: {fileID: 1245199659}
+    - target: {fileID: 667434689023773679, guid: 2340d074cb6ca4e908c8e46f9cfdd0cb, type: 3}
       propertyPath: personCamera
       value: 
       objectReference: {fileID: 1245199652}
@@ -3246,8 +3236,5 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5227549305093887170, guid: 2340d074cb6ca4e908c8e46f9cfdd0cb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1461971160}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5227549305093589218, guid: 2340d074cb6ca4e908c8e46f9cfdd0cb, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1115063754}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2340d074cb6ca4e908c8e46f9cfdd0cb, type: 3}
