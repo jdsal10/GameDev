@@ -81,6 +81,9 @@ public class carController : MonoBehaviour
     public void WheelsChange()
     {
         UpdateWheel(flWheelCollider, flWheelTransform);
+        UpdateWheel(frWheelCollider, frWheelTransform);
+        UpdateWheel(blWheelCollider, blWheelTransform);
+        UpdateWheel(brWheelCollider, brWheelTransform);
     }
 
     public void UpdateWheel(WheelCollider wheelCollider, Transform wheelTransform)
