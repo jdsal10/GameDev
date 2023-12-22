@@ -31,13 +31,18 @@ public class FireSpawner : MonoBehaviour
         List<Transform> avaliableSpawnLocations = new List<Transform>(spawnLocations);
         //spawn the specified amount of fires
         for(int i = 0; i < toSpawn; i ++){
-            //
-            Transform randomSpawn = spawnLocations[Random.Range(0, spawnLocations.Length)];
+            //Randomly choose an integer from avaliable list
+            int randomIndex = Random.Range(0, avaliableSpawnLocations.Count);
 
-            //choose location at random from avaliable list
-            int randomIntex = Random.Range(0, avaliableSpawnLocations.Count);
+            // Transform randomSpawn = spawnLocations[Random.Range(0, spawnLocations.Length)];
+
+            //select location using random number and instantiate the fire
+            Transform randomSpawn = avaliableSpawnLocations[randomIndex];
 
             Instantiate(firePrefab, randomSpawn.position, randomSpawn.rotation);
+
+            //remove selected fire from teh list to avoid repetition of the location
+            avaliableSpawnLocations.RemoveAt(randomIndex);
         }
     }
 }
